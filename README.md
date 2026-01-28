@@ -33,15 +33,6 @@ Devido à biblioteca `face_recognition`, você precisará do **CMake** e do **C+
 3. Inicie o aplicativo::
    python app/main.py
 
-📂 Estrutura do Projeto
-
-📁 app/
-📄 main.py           # Ponto de entrada (executável)
-📁 core/             # Lógica de processamento e IA
-📁 ui/               # Interface gráfica e gerenciamento de grid
-📁 workers/          # Funções para processamento em paralelo
-📄 fotofinder_config.json # Configurações persistentes do usuário
-
 ⚙️ Configurações de Análise
     Preciso: Menor tolerância a erros, evita misturar pessoas parecidas.
     Abrangente: Maior tolerância, útil quando as fotos têm iluminação ruim ou ângulos variados.

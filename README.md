@@ -1,6 +1,6 @@
-# FotoFinder Pro 📸
+# FotoFinder 📸
 
-O **FotoFinder Pro** é uma ferramenta avançada de organização de fotos baseada em Inteligência Artificial. Ele utiliza reconhecimento facial para agrupar pessoas automaticamente ou encontrar indivíduos específicos em grandes volumes de arquivos.
+O **FotoFinder** é uma ferramenta avançada de organização de fotos baseada em Inteligência Artificial. Ele utiliza reconhecimento facial para agrupar pessoas automaticamente ou encontrar indivíduos específicos em grandes volumes de arquivos.
 
 ## ✨ Funcionalidades
 
@@ -25,5 +25,28 @@ O **FotoFinder Pro** é uma ferramenta avançada de organização de fotos basea
 Devido à biblioteca `face_recognition`, você precisará do **CMake** e do **C++ Compiler** instalados no seu sistema (via Visual Studio Build Tools no Windows).
 
 1. Clone o repositório:
-   ```bash
    git clone https://github.com/SEU_USUARIO/foto-finder-pro.git
+
+2. Instale as dependências:
+   pip install -r requirements.txt
+
+3. Inicie o aplicativo::
+   python app/main.py
+
+   📂 Estrutura do Projeto
+
+📁 app/
+    📄 main.py           # Ponto de entrada (executável)
+    📁 core/             # Lógica de processamento e IA
+    📁 ui/               # Interface gráfica e gerenciamento de grid
+    📁 workers/          # Funções para processamento em paralelo
+
+📄 fotofinder_config.json # Configurações persistentes do usuário
+
+⚙️ Configurações de Análise
+    Preciso: Menor tolerância a erros, evita misturar pessoas parecidas.
+    Abrangente: Maior tolerância, útil quando as fotos têm iluminação ruim ou ângulos variados.
+    Downscale: O modo "Muito Rápido" reduz o tempo de análise em até 75% em fotos de alta resolução.
+
+⚖️ Licença
+Este projeto está sob a licença MIT.
